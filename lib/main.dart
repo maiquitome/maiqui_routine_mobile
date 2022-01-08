@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:maiqui_routine/core/theme/app_theme.dart';
 
 import 'features/home/view/pages/home_page.dart';
 
@@ -14,9 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Maiqui Routine',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: AppTheme.theme,
       home: const HomePage(),
     );
   }
