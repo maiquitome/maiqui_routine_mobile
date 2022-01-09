@@ -20,11 +20,27 @@ abstract class AppColors {
   static Color secondary = primary[900]!;
   static Color background = primary[50]!;
 
-  static const MaterialColor category1 = MaterialColor(
+  static MaterialColor category1 = MaterialColor(
+    0xffD4B300,
+    <int, Color>{
+      50: primary[100]!, //10%
+      100: primary, //20%
+    },
+  );
+
+  static const MaterialColor category2 = MaterialColor(
     0xffD4B300,
     <int, Color>{
       50: Color(0xffFFD700), //10%
       100: Color(0xffD4B300), //20%
+    },
+  );
+
+  static const MaterialColor category3 = MaterialColor(
+    0xffBF4141,
+    <int, Color>{
+      50: Color(0xffEF7A7A), //10%
+      100: Color(0xffBF4141), //20%
     },
   );
 }
