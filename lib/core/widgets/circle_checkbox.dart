@@ -28,20 +28,17 @@ class CircleCheckbox extends StatelessWidget {
             width: 4,
           ),
         ),
-        child: Padding(
-          padding: const EdgeInsets.all(1.0),
-          child: value
-              ? Icon(
-                  Icons.check,
-                  size: 30.0,
-                  color: darkColor,
-                )
-              : Icon(
-                  Icons.check_box_outline_blank,
-                  size: 30.0,
-                  color: AppColors.background,
-                ),
-        ),
+        child: value
+            ? Icon(
+                Icons.check,
+                size: 26.0,
+                color: darkColor,
+              )
+            : Icon(
+                Icons.check_box_outline_blank,
+                size: 26.0,
+                color: AppColors.background,
+              ),
       ),
     );
   }
