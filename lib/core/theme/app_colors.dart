@@ -6,11 +6,11 @@ abstract class AppColors {
     <int, Color>{
       50: Color(0xffFCFEFF), //10%
       100: Color(0xffBBDEFB), //20%
-      200: Color(0xff000000), //30%
+      200: Color(0xff8FCDFF), //30%
       300: Color(0xff64B5F6), //40%
       400: Color(0xff2F9CF3), //50%
       500: Color(0xff000000), //60%
-      600: Color(0xff000000), //70%
+      600: Color(0xff456170), //70%
       700: Color(0xff39546A), //80%
       800: Color(0xff144258), //90%
       900: Color(0xff0F2D3C), //100%
@@ -19,28 +19,29 @@ abstract class AppColors {
 
   static Color secondary = primary[900]!;
   static Color background = primary[50]!;
+  static Color text = const Color(0xff8C97A0);
 
-  static MaterialColor category1 = MaterialColor(
-    0xffD4B300,
-    <int, Color>{
-      50: primary[100]!, //10%
-      100: primary, //20%
-    },
-  );
+  static Map<String, int> blueCategory = <String, int>{
+    'lightColor': 0xff8FCDFF,
+    'darkColor': 0xff2F9CF3,
+    'titleColor': 0xff456170
+  };
 
-  static const MaterialColor category2 = MaterialColor(
-    0xffD4B300,
-    <int, Color>{
-      50: Color(0xffFFD700), //10%
-      100: Color(0xffD4B300), //20%
-    },
-  );
+  static Map<String, int> yellowCategory = <String, int>{
+    'lightColor': 0xffFFD700,
+    'darkColor': 0xffD4B300,
+    'titleColor': 0xff807959
+  };
 
-  static const MaterialColor category3 = MaterialColor(
-    0xffBF4141,
-    <int, Color>{
-      50: Color(0xffEF7A7A), //10%
-      100: Color(0xffBF4141), //20%
-    },
-  );
+  static Map<String, int> redCategory = <String, int>{
+    'lightColor': 0xffEF7A7A,
+    'darkColor': 0xffBF4141,
+    'titleColor': 0xff694949
+  };
+
+  static Map<String, int> greenCategory = <String, int>{
+    'lightColor': 0xff61E194,
+    'darkColor': 0xff3F9762,
+    'titleColor': 0xff41614D
+  };
 }
