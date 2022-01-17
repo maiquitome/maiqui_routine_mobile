@@ -22,7 +22,7 @@ abstract class AppColors {
   static Color text = const Color(0xff8C97A0);
 
   static Map<String, int> blueCategory = <String, int>{
-    'lightColor': 0xff8FCDFF,
+    'lightColor': 0xffBBDEFB,
     'darkColor': 0xff2F9CF3,
     'titleColor': 0xff456170
   };
