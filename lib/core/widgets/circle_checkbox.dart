@@ -22,7 +22,7 @@ class CircleCheckbox extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           shape: BoxShape.circle,
-          color: AppColors.background,
+          color: value ? lightColor : AppColors.background,
           border: Border.all(
             color: lightColor,
             width: 4,
@@ -32,7 +32,7 @@ class CircleCheckbox extends StatelessWidget {
             ? Icon(
                 Icons.check,
                 size: 26.0,
-                color: lightColor,
+                color: darkColor,
               )
             : Icon(
                 Icons.check_box_outline_blank,
