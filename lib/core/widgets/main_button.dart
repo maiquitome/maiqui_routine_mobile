@@ -23,13 +23,13 @@ class MainButton extends StatelessWidget {
       child: Icon(
         icon,
         color: iconColor,
-        size: _size.height * 0.035,
+        size: _size.width * 0.06,
       ),
       style: ButtonStyle(
         padding: MaterialStateProperty.all(
           EdgeInsets.only(
-            top: _size.height * 0.016,
-            bottom: _size.height * 0.016,
+            top: _size.width * 0.017,
+            bottom: _size.width * 0.017,
             left: _size.width * 0.08,
             right: _size.width * 0.08,
           ),
