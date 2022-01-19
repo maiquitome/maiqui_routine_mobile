@@ -4,13 +4,11 @@ class MainButton extends StatelessWidget {
   const MainButton({
     Key? key,
     this.onPressed,
-    this.child,
     this.icon,
     this.iconColor,
   }) : super(key: key);
 
   final void Function()? onPressed;
-  final Widget? child;
   final IconData? icon;
   final Color? iconColor;
 
@@ -23,7 +21,7 @@ class MainButton extends StatelessWidget {
       child: Icon(
         icon,
         color: iconColor,
-        size: _size.width * 0.06,
+        // size: _size.height * 0.03,
       ),
       style: ButtonStyle(
         padding: MaterialStateProperty.all(
