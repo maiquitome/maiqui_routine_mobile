@@ -19,7 +19,14 @@ abstract class AppColors {
 
   static Color secondary = primary[900]!;
   static Color background = primary[50]!;
-  static Color text = const Color(0xff8C97A0);
+  static Color toDoDescription = const Color(0xff8C97A0);
+  static Color line = const Color(0xffEAEEF1);
+
+  static Color inactiveButton = primary[100]!;
+  static Color inactiveTextButton = primary[600]!;
+  
+  static Color activeButton = background;
+  static Color activeTextButton = primary[800]!;
 
   static Map<String, int> blueCategory = <String, int>{
     'lightColor': 0xffBBDEFB,
