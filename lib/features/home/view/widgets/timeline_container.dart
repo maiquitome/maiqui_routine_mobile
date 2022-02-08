@@ -15,7 +15,7 @@ class TimelineContainer extends StatelessWidget {
     final Size _size = MediaQuery.of(context).size;
 
     return Container(
-      padding: const EdgeInsets.only(left: padding, right: padding),
+      padding: const EdgeInsets.only(left: padding),
       margin: EdgeInsets.only(top: _size.height * 0.2),
       height: double.infinity,
       width: double.infinity,
