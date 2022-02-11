@@ -15,22 +15,19 @@ class MainButtons extends StatelessWidget {
       children: <Widget>[
         SizedBox(height: _size.height * 0.177),
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
             MainButton(
               icon: CupertinoIcons.add,
               onPressed: () {},
-              child: const Icon(Icons.graphic_eq),
             ),
             MainButton(
               icon: CupertinoIcons.calendar,
               onPressed: () {},
-              child: const Icon(Icons.graphic_eq),
             ),
             MainButton(
-              icon: CupertinoIcons.chart_bar_square,
+              icon: Icons.bar_chart,
               onPressed: () {},
-              child: const Icon(Icons.graphic_eq),
             ),
           ],
         ),
